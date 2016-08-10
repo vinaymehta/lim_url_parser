@@ -195,3 +195,11 @@ To show all stored urls and their contents. For example:
   "status": 200
 }
 ```
+
+## Rspecs
+
+To run its test cases, please run this command
+
+```bash
+$ bundle exec rspec --format doc
+```
