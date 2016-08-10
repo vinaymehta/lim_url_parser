@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: url_parser
+  pool: 5
+  username: beryl-mac-air
+  password: root
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: url_parser_test
+  pool: 5
+  username: beryl-mac-air
+  password: root
