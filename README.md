@@ -4,7 +4,7 @@
 
 This Application brings convention over configuration to JSON generation.
 
-It basically parse any url provided to its api and fetch the page content for tags 'h1', 'h2', 'h3' and links
+It basically parses any url provided in api and fetch the page content for tags 'h1', 'h2', 'h3' and links and store them. It also shows all stored urls and their respective contents.
 
 It is generally safe and recommended to use the master branch.
 
