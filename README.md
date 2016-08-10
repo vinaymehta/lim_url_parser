@@ -37,3 +37,219 @@ $ rails server
 ```
 
 You can now launch your browser and access 127.0.0.1:3000.
+
+## Usage
+
+### Save Url Page Content Api
+
+To save content of a page, you need to send request with url of page you want to parse. For example:
+
+#### HTTP Request
+`POST /api/save_content`
+
+#### ARGUMENTS
+
+Parameter | Type | Description
+--------- | ---- | -----------
+url | String | URL of page to be parsed (required)
+
+> A sample request:
+
+```json
+{
+  "url": "http://berylsystems.com"
+}
+```
+
+> A sample response for successfully saved content with status 200
+
+```json
+{
+  "data": {
+    "url": "http://berylsystems.com",
+    "h1": [
+      "Why it should be us ?"
+    ],
+    "h2": [
+      "Vision",
+      "Mission",
+      "Experts with us : Ownership",
+      "It's +delta: innovative in approach",
+      "Well the basics : OTQ delivery",
+      "Engaged: Owl eyes Bat ears"
+    ],
+    "h3": [
+      "About us",
+      "Join us",
+      "Get in touch"
+    ],
+    "links": [
+      "/",
+      "/services",
+      "/portfolio",
+      "/start",
+      "/blog",
+      "/labs",
+      "/testimonial",
+      "/open-positions",
+      "/contact",
+      "https://www.facebook.com/pages/Beryl-Systems/168238099857751",
+      "https://twitter.com/berylsystems",
+      "https://www.linkedin.com/company/beryl-systems",
+      "/open-positions",
+      "mailto:info@berylsystems.com"
+    ]
+  },
+  "message": "Url Content Stored successfully.",
+  "status": 200
+}
+```
+
+> A sample response if no url provided with status 400
+
+```json
+{
+  "error": "Please provide Url!",
+  "status": 400
+}
+```
+
+> A sample response if url is invalid
+
+```json
+{
+  "message": "Something went wrong! Please try again later",
+  "status": 404
+}
+```
+
+
+### Show all stored Urls
+
+To show all stored urls and their contents. For example:
+
+#### HTTP Request
+
+`GET /api/show`
+
+> A sample response status 200
+
+```json
+{
+  "data": [
+    {
+      "url": "http://berylsystems.com/",
+      "h1": [
+        "Why it should be us ?"
+      ],
+      "h2": [
+        "VisionMissionExperts with us : OwnershipIt's +delta: innovative in approachWell the basics : OTQ deliveryEngaged: Owl eyes Bat ears"
+      ],
+      "h3": [
+        "About usJoin usGet in touch"
+      ],
+      "links": [
+        "Services what we offer Portfolio our creations Start how to Blog Discussions Labs startup labs Testimonials client feedback Careers join us Contact get in touch Visit Open Positionsinfo@berylsystems.com"
+      ]
+    },
+    {
+      "url": "https://facebook.com",
+      "h1": [
+        "Facebook"
+      ],
+      "h2": [
+        "आपके ब्राउज़र पर Javascript अक्षम है.",
+        "सुरक्षा जाँच"
+      ],
+      "h3": [],
+      "links": [
+        "https://www.facebook.com/",
+        "/recover/initiate?lwv=110",
+        "#",
+        "/legal/terms",
+        "/about/privacy",
+        "/help/cookies",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "/pages/create/?ref_type=registration_form",
+        "https://pa-in.facebook.com/",
+        "https://ur-pk.facebook.com/",
+        "https://gu-in.facebook.com/",
+        "https://bn-in.facebook.com/",
+        "https://ta-in.facebook.com/",
+        "https://te-in.facebook.com/",
+        "https://ml-in.facebook.com/",
+        "https://kn-in.facebook.com/",
+        "https://en-gb.facebook.com/",
+        "https://es-la.facebook.com/",
+        "#",
+        "/r.php",
+        "/login/",
+        "https://messenger.com/",
+        "/lite/",
+        "/mobile/?ref=pf",
+        "/find-friends?ref=pf",
+        "/badges/?ref=pf",
+        "/directory/people/",
+        "/directory/pages/",
+        "/places/",
+        "/games/",
+        "/directory/places/",
+        "/directory/celebrities/",
+        "/directory/groups/",
+        "/facebook",
+        "/campaign/landing.php?placement=pflo&campaign_id=402047449186&extra_1=auto",
+        "/pages/create/?ref_type=sitefooter",
+        "https://developers.facebook.com/?ref=pf",
+        "/careers/?ref=pf",
+        "/privacy/explanation",
+        "/help/cookies/?ref=sitefooter",
+        "https://www.facebook.com/help/568137493302217",
+        "/policies/?ref=pf",
+        "/help/?ref=pf",
+        "/settings",
+        "/allactivity?privacy_source=activity_log_top_menu"
+      ]
+    },
+    {
+      "url": "http://berylsystems.com",
+      "h1": [
+        "Why it should be us ?"
+      ],
+      "h2": [
+        "Vision",
+        "Mission",
+        "Experts with us : Ownership",
+        "It's +delta: innovative in approach",
+        "Well the basics : OTQ delivery",
+        "Engaged: Owl eyes Bat ears"
+      ],
+      "h3": [
+        "About us",
+        "Join us",
+        "Get in touch"
+      ],
+      "links": [
+        "/",
+        "/services",
+        "/portfolio",
+        "/start",
+        "/blog",
+        "/labs",
+        "/testimonial",
+        "/open-positions",
+        "/contact",
+        "https://www.facebook.com/pages/Beryl-Systems/168238099857751",
+        "https://twitter.com/berylsystems",
+        "https://www.linkedin.com/company/beryl-systems",
+        "/open-positions",
+        "mailto:info@berylsystems.com"
+      ]
+    }
+  ],
+  "status": 200
+}
+```
