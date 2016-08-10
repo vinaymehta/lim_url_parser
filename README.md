@@ -27,7 +27,7 @@ To install LIM Url Parser you need the following:
 - Ruby on Rails 4.2.x
 - A database engine, PgSQL
 
-1.  Edit database.yml to add your database name, login and password.
+1. Edit database.yml to add your database name, login and password.
 
 ```bash
 $ bundle install
@@ -36,4 +36,4 @@ $ rake db:migrate
 $ rails server
 ```
 
-You can now launch you browser and access 127.0.0.1:3000.
+You can now launch your browser and access 127.0.0.1:3000.
