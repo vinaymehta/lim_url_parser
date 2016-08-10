@@ -40,7 +40,7 @@ You can now launch your browser and access 127.0.0.1:3000.
 
 ## Usage
 
-### Save Url Page Content Api
+### 1. Save Url Page Content Api
 
 To save content of a page, you need to send request with url of page you want to parse. For example:
 
@@ -124,7 +124,7 @@ url | String | URL of page to be parsed (required)
 ```
 
 
-### Show all stored Urls
+### 2. Show all stored Urls Api
 
 To show all stored urls and their contents. For example:
 
