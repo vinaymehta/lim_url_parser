@@ -84,19 +84,9 @@ url | String | URL of page to be parsed (required)
       "Get in touch"
     ],
     "links": [
-      "/",
-      "/services",
-      "/portfolio",
-      "/start",
-      "/blog",
-      "/labs",
-      "/testimonial",
-      "/open-positions",
-      "/contact",
       "https://www.facebook.com/pages/Beryl-Systems/168238099857751",
       "https://twitter.com/berylsystems",
       "https://www.linkedin.com/company/beryl-systems",
-      "/open-positions",
       "mailto:info@berylsystems.com"
     ]
   },
@@ -164,17 +154,6 @@ To show all stored urls and their contents. For example:
       "h3": [],
       "links": [
         "https://www.facebook.com/",
-        "/recover/initiate?lwv=110",
-        "#",
-        "/legal/terms",
-        "/about/privacy",
-        "/help/cookies",
-        "#",
-        "#",
-        "#",
-        "#",
-        "#",
-        "/pages/create/?ref_type=registration_form",
         "https://pa-in.facebook.com/",
         "https://ur-pk.facebook.com/",
         "https://gu-in.facebook.com/",
@@ -184,34 +163,7 @@ To show all stored urls and their contents. For example:
         "https://ml-in.facebook.com/",
         "https://kn-in.facebook.com/",
         "https://en-gb.facebook.com/",
-        "https://es-la.facebook.com/",
-        "#",
-        "/r.php",
-        "/login/",
-        "https://messenger.com/",
-        "/lite/",
-        "/mobile/?ref=pf",
-        "/find-friends?ref=pf",
-        "/badges/?ref=pf",
-        "/directory/people/",
-        "/directory/pages/",
-        "/places/",
-        "/games/",
-        "/directory/places/",
-        "/directory/celebrities/",
-        "/directory/groups/",
-        "/facebook",
-        "/campaign/landing.php?placement=pflo&campaign_id=402047449186&extra_1=auto",
-        "/pages/create/?ref_type=sitefooter",
-        "https://developers.facebook.com/?ref=pf",
-        "/careers/?ref=pf",
-        "/privacy/explanation",
-        "/help/cookies/?ref=sitefooter",
-        "https://www.facebook.com/help/568137493302217",
-        "/policies/?ref=pf",
-        "/help/?ref=pf",
-        "/settings",
-        "/allactivity?privacy_source=activity_log_top_menu"
+        "https://es-la.facebook.com/"
       ]
     },
     {
@@ -233,19 +185,9 @@ To show all stored urls and their contents. For example:
         "Get in touch"
       ],
       "links": [
-        "/",
-        "/services",
-        "/portfolio",
-        "/start",
-        "/blog",
-        "/labs",
-        "/testimonial",
-        "/open-positions",
-        "/contact",
         "https://www.facebook.com/pages/Beryl-Systems/168238099857751",
         "https://twitter.com/berylsystems",
         "https://www.linkedin.com/company/beryl-systems",
-        "/open-positions",
         "mailto:info@berylsystems.com"
       ]
     }
