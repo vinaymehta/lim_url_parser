@@ -1,28 +1,4 @@
-# URLParser
-
-<table>
-  <tr>
-    <td>Build Status</td>
-    <td>
-      <a href="https://travis-ci.org/rails-api/active_model_serializers"><img src="https://travis-ci.org/rails-api/active_model_serializers.svg?branch=master" alt="Build Status" ></a>
-      <a href="https://ci.appveyor.com/project/joaomdmoura/active-model-serializers/branch/master"><img src="https://ci.appveyor.com/api/projects/status/x6xdjydutm54gvyt/branch/master?svg=true" alt="Build status"></a>
-    </td>
-  </tr>
-  <tr>
-    <td>Code Quality</td>
-    <td>
-      <a href="https://codeclimate.com/github/rails-api/active_model_serializers"><img src="https://codeclimate.com/github/rails-api/active_model_serializers/badges/gpa.svg" alt="Code Quality"></a>
-      <a href="https://codebeat.co/projects/github-com-rails-api-active_model_serializers"><img src="https://codebeat.co/badges/a9ab35fa-8b5a-4680-9d4e-a81f9a55ebcd" alt="codebeat" ></a>
-      <a href="https://codeclimate.com/github/rails-api/active_model_serializers/coverage"><img src="https://codeclimate.com/github/rails-api/active_model_serializers/badges/coverage.svg" alt="Test Coverage"></a>
-    </td>
-  </tr>
-  <tr>
-    <td>Issue Stats</td>
-    <td>
-      <a href="https://github.com/rails-api/active_model_serializers/pulse/monthly">Pulse</a>
-    </td>
-  </tr>
-</table>
+# LIM URL Parser
 
 ## About
 
@@ -37,17 +13,17 @@ It is generally safe and recommended to use the master branch.
 ### Download
 
 You can download the latest
-UrlParser [stable release (8.3.1)](https://github.com/publify/publify/archive/v8.3.1.tar.gz)
+LIM Url Parser [stable release](https://github.com/vinaymehta/lim_url_parser/archive/master.zip)
 
-If you want to run the master branch, you can [clone the UrlParser
-repository](https://github.com/publify/publify.git). However, random things may
+If you want to run the master branch, you can [clone the LIM Url Parser
+repository](https://github.com/vinaymehta/lim_url_parser.git). However, random things may
 be broken there at any time, so tread carefully!
 
-### Install UrlParser locally
+### Install Application locally
 
-To install UrlParser you need the following:
+To install LIM Url Parser you need the following:
 
-- Ruby (MRI) 2.3.0
+- Ruby 2.3.0
 - Ruby on Rails 4.2.x
 - A database engine, PgSQL
 
